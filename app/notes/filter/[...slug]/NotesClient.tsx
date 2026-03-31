@@ -15,7 +15,7 @@ import NoteList from '@/components/NoteList/NoteList';
 
 export default function NotesClient() {
   const params = useParams();
-  const tagParam = (params.tag as string[])?.[0];
+  const tagParam = (params.slug as string[])?.[0];
   const activeTag = tagParam === 'all' ? undefined : tagParam;
 
   const [page, setPage] = useState<number>(1);
