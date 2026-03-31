@@ -5,7 +5,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { useDebounce } from 'use-debounce';
 import { useParams } from 'next/navigation';
 import { Toaster } from 'react-hot-toast';
-import { fetchNotes } from '@/lib/api/notes';
+import { fetchNotes } from '@/lib/api';
 import css from './NotesPage.module.css';
 import SearchBox from '@/components/SearchBox/SearchBox';
 import Pagination from '@/components/Pagination/Pagination';

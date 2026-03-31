@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import css from './NoteList.module.css';
 import { Note } from '@/types/note';
-import { deleteNote } from '@/lib/api/notes';
+import { deleteNote } from '@/lib/api';
 import toast from 'react-hot-toast';
 
 interface NoteListProps {
@@ -42,7 +42,7 @@ export default function NoteList({ notes }: NoteListProps) {
 
   return (
     <ul className={css.list}>
-      {notes.map(note => (
+      {notes.map((note) => (
         <li key={note.id} className={css.listItem}>
           <h2 className={css.title}>{note.title}</h2>
           <p className={css.content}>{note.content}</p>

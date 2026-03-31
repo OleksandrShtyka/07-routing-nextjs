@@ -1,3 +1,5 @@
+'use client';
+
 import { Note } from '@/types/note';
 import css from './NotePreview.module.css';
 
